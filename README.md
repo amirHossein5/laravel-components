@@ -2,21 +2,21 @@
 This package provides ready to use pagination components using tailwindcss, with multiple theme according to your taste. 
 
 
-for example instead of :
+For example ***instead of*** :
 ```php
 {{ $users->links() }}
 ```
 
-you may use :
-```php
+You may use :
+```html
 <x-paginate :elems="$users" />
 ```
 
-and it previews with default theme :
+And it previews with ***default*** theme :
 
 <img src="/screens/light.png" alt="light theme" width="" />
 
-but you can ***change*** themes and more settings.
+But you can **change** **themes** and more **settings** read [Usage](#usage).
 
 <br/>
 
@@ -27,28 +27,31 @@ but you can ***change*** themes and more settings.
 
 
 ## Prerequisites
+
 **Tailwindcss** installed, **Laravel 8**, **PHP 8** 
 
 
 ## Installation
-```php
+
+```bash
 composer require amir-hossein5/laravel-components
 ```
 
-```php
+```bash
 php artisan laravel-components:install
 ```
 
 And you may run ```npm run watch``` or, ```npm run dev``` or, ```npm run prod```
 
-Be sure you have added **tailwindcss** to your page.
+Be sure that **tailwindcss** has been added to page.
 
 ## Usage
 
 - ### Pagination
 
-for pagination you can use ```<x-paginate />``` tag with ```:elems=""``` to pass pagination items.
-all parameters for paginate tag that you may use :
+For pagination use ```<x-paginate />``` tag with ```:elems=""``` to pass pagination items.
+
+All parameters for paginate tag that you may use :
 
 
 | parameter                             | description                                                         | default                          |
@@ -60,8 +63,20 @@ all parameters for paginate tag that you may use :
 | prevInResponsive="string"             |  previous button's html in responsive pagination                    | laravel's default                |
 | nextInResponsive="string"             |  next button's html in responsive pagination                        | laravel's default                |
 | :showDisabledButtons="boolean"        |  show disabled buttons when paginator is on first or last page      | depends on theme                 |
-| :showPaginatorDetails="boolean"       | show "Showing 4 to 6 of 12 results" or not                          | true                             |
-| class="string"                        |  main tag of pagination class                                       |                                  |
+| :showPaginatorDetails="boolean"       | show text "Showing 4 to 6 of 12 results" or not                     | true                             |
+| class="string"                        |  class for pagination main (parent) tag                             |                                  |
+
+
+for example:
+
+```html
+<x-paginate
+  :elems="$users"
+  theme="tailwind-gray-circled"
+  :showPaginatorDetails="false"
+  :showDisabledButtons="true" 
+/>
+```
 
 
 ## Themes
@@ -105,6 +120,10 @@ all parameters for paginate tag that you may use :
 
 
 <br/>
+
+## Modification
+
+You can modify components which located in **resources/vendor/pagination**.
 
 ## License
 
