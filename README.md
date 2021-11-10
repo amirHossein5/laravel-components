@@ -112,4 +112,4 @@ all parameters for paginate tag that you may use :
 
 ## License
 
-LICENCE.md
+[License](LICENSE)
