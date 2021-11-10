@@ -61,7 +61,6 @@ all parameters for paginate tag that you may use :
 | :showPaginatorDetails="boolean"       | show "Showing 4 to 6 of 12 results" or not                          | true                             |
 | class="string"                        |  main tag of pagination class                                       |                                  |
 
-<br/>
 
 ## Themes
 
@@ -69,45 +68,47 @@ all parameters for paginate tag that you may use :
 
   - ### tailwind-light
 
-|                             |                             |
-| --------------------------- | --------------------------- |
-| ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
+    |                             |                             |
+    | --------------------------- | --------------------------- |
+    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
 
 
   - ### tailwind-gray
 
-|                             |                             |
-| --------------------------- | --------------------------- |
-| ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
+    |                             |                             |
+    | --------------------------- | --------------------------- |
+    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
 
 
   - ### tailwind-light-circled
 
-|                             |                             |
-| --------------------------- | --------------------------- |
-| ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
+    |                             |                             |
+    | --------------------------- | --------------------------- |
+    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
 
 
   - ### tailwind-gray-circled
 
-|                             |                             |
-| --------------------------- | --------------------------- |
-| ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
+    |                             |                             |
+    | --------------------------- | --------------------------- |
+    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
 
 
   - ### tailwind-light-underlined
 
-|                             |                             |
-| --------------------------- | --------------------------- |
-| ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
+    |                             |                             |
+    | --------------------------- | --------------------------- |
+    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
 
 
   - ### tailwind-red-pill
 
-|                             |                             |
-| --------------------------- | --------------------------- |
-| ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
+    |                             |                             |
+    | --------------------------- | --------------------------- |
+    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
 
+
+<br/>
 
 ## License
 
