@@ -27,6 +27,7 @@ but you can change themes and more settings.
 ## Prerequisites
 **Tailwindcss** installed, **Laravel 8**, **PHP 8** 
 
+
 ## Installation
 ```php
 composer require amir-hossein5/laravel-components
@@ -42,14 +43,14 @@ Be sure you have added **tailwindcss** to your page.
 
 ## Usage
 
-### Pagination
+- ### Pagination
 
 for pagination you can use ```<x-paginate />``` tag with ```:elems=""``` to pass pagination items.
-all parameters for paginate tag you may use :
+all parameters for paginate tag that you may use :
 
 
 | parameter                             | description                                                         | default                          |
-|---------------------------------------|:-------------------------------------------------------------------:|---------------------------------:|
+|-------------------------------------- |-------------------------------------------------------------------- | ---------------------------------|
 | :elems=""                             |  pagination items                                                   |                                  |
 | theme="string"                        |  name of theme. find themes [here](#themes)                         | [tailwind-light](#tailwind-light)| 
 | prev="string"                         |  previous button's html                                             | laravel's default                |
@@ -60,45 +61,48 @@ all parameters for paginate tag you may use :
 | :showPaginatorDetails="boolean"       | show "Showing 4 to 6 of 12 results" or not                          | true                             |
 | class="string"                        |  main tag of pagination class                                       |                                  |
 
+<br/>
 
 ## Themes
 
-### tailwind-light
+- ### pagination
+
+  - ### tailwind-light
 
 |                             |                             |
 | --------------------------- | --------------------------- |
 | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
 
 
-### tailwind-gray
+  - ### tailwind-gray
 
 |                             |                             |
 | --------------------------- | --------------------------- |
 | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
 
 
-### tailwind-light-circled
+  - ### tailwind-light-circled
 
 |                             |                             |
 | --------------------------- | --------------------------- |
 | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
 
 
-### tailwind-gray-circled
+  - ### tailwind-gray-circled
 
 |                             |                             |
 | --------------------------- | --------------------------- |
 | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
 
 
-### tailwind-light-underlined
+  - ### tailwind-light-underlined
 
 |                             |                             |
 | --------------------------- | --------------------------- |
 | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
 
 
-### tailwind-red-pill
+  - ### tailwind-red-pill
 
 |                             |                             |
 | --------------------------- | --------------------------- |
