@@ -1,5 +1,5 @@
 
-This package provides ready to use pagination components, with multiple theme according to your taste using tailwindcss. 
+This package provides ready to use pagination components using tailwindcss, with multiple theme according to your taste. 
 
 
 for example instead of :
@@ -14,7 +14,9 @@ you may use :
 
 and it previews with default theme :
 
-but you can change themes and more settings.
+<img src="/screens/light.png" alt="light theme" width="" />
+
+but you can ***change*** themes and more settings.
 
 <br/>
 
@@ -68,44 +70,38 @@ all parameters for paginate tag that you may use :
 
   - ### tailwind-light
 
-    |                             |                             |
-    | --------------------------- | --------------------------- |
-    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
+    <img src="/screens/light.png" alt="light theme" />
 
 
   - ### tailwind-gray
 
-    |                             |                             |
-    | --------------------------- | --------------------------- |
-    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
+    |                                 |                                   |
+    | --------------------------------| --------------------------------- |
+    | ![gray-theme](screens/gray.png) | ![gray-theme](/screens/gray1.png) |
 
 
   - ### tailwind-light-circled
 
-    |                             |                             |
-    | --------------------------- | --------------------------- |
-    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
+
+    <img src="/screens/light-circled.png" alt="light-circled theme" />
 
 
   - ### tailwind-gray-circled
 
-    |                             |                             |
-    | --------------------------- | --------------------------- |
-    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
-
+    
+    <img src="/screens/gray-circled.png" alt="gray-circled theme" />
+  
 
   - ### tailwind-light-underlined
 
-    |                             |                             |
-    | --------------------------- | --------------------------- |
-    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
+
+    <img src="/screens/light-underlined.png" alt="light-underlined theme" />
 
 
   - ### tailwind-red-pill
 
-    |                             |                             |
-    | --------------------------- | --------------------------- |
-    | ![Shocase 1](screens/1.PNG) | ![Shocase 7](screens/7.PNG) |
+
+    <img src="/screens/red-pill.png" alt="red-pill theme" />
 
 
 <br/>
