@@ -4,10 +4,13 @@ This package provides ready to use pagination components using tailwindcss, with
 
 For example ***instead of*** :
 ```php
+//Controller
+ $users = User::paginate(4);
+//Blade
 {{ $users->links() }}
 ```
 
-You may use :
+You may use in blade:
 ```html
 <x-paginate :elems="$users" />
 ```
@@ -28,7 +31,7 @@ But you can **change** **themes** and more **settings** read [Usage](#usage).
 
 ## Prerequisites
 
-**Tailwindcss** installed, **Laravel 8**, **PHP 8** 
+**Tailwindcss**, **Laravel 8**, **PHP 8** 
 
 
 ## Installation
@@ -43,7 +46,7 @@ php artisan laravel-components:install
 
 And you may run ```npm run watch``` or, ```npm run dev``` or, ```npm run prod```
 
-Be sure that **tailwindcss** has been added to page.
+Be sure that ***Tailwindcss*** has been added to page.
 
 ## Usage
 
@@ -90,9 +93,8 @@ for example:
 
   - ### tailwind-gray
 
-    |                                 |                                   |
-    | --------------------------------| --------------------------------- |
-    | ![gray-theme](screens/gray.png) | ![gray-theme](/screens/gray1.png) |
+    ![gray-theme](screens/gray.png) 
+    ![gray-theme](/screens/gray1.png)
 
 
   - ### tailwind-light-circled
