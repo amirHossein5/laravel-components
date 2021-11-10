@@ -19,7 +19,7 @@ And it previews with ***default*** theme :
 
 <img src="/screens/light.png" alt="light theme" width="" />
 
-But you can **change** **themes** and more **settings** read [Usage](#usage).
+But you can **change** **themes** and more **settings** read **[Usage](#usage)**.
 
 <br/>
 
