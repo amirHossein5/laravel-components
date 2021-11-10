@@ -28,19 +28,6 @@ class InstallCommand extends Command
      */
     public function handle()
     {
-        $this->installServiceProviderAfter('RouterServiceProvider', 'ComponentsServiceProvider');
-
         $this->call('vendor:publish', ['--tag' => 'laravel-components', '--force']);
-    }
-
-    private function installServiceProviderAfter(string $after, string $name): void
-    {
-        if (!Str::contains($appConfig = file_get_contents(config_path('app.php')), "AmirHossein5\LaravelComponents\{$name}::class")) {
-            file_put_contents(config_path('app.php'), str_replace(
-                "App\Providers\{$after}::class",
-                "App\Providers\{$after}::class".PHP_EOL.        "AmirHossein5\LaravelComponents\{$name}::class",
-                $appConfig
-            ));
-        };
     }
 }
