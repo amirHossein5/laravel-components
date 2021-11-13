@@ -40,13 +40,19 @@ But you can **change** **themes** and more **settings** read **[Usage](#usage)**
 composer require amir-hossein5/laravel-components
 ```
 
-```bash
-php artisan laravel-components:install
+If you are using tailwindcss's purge, add path to your purge section: 
+
+```js
+  // tailwind.config.js
+  
+     purge: [
+        ...
+        
+        './vendor/amir-hossein5/resources/**/*.blade.php'
+   ],
 ```
 
 And you may run ```npm run watch``` or, ```npm run dev``` or, ```npm run prod```
-
-Be sure that ***Tailwindcss*** has been added to page.
 
 ## Usage
 
@@ -125,7 +131,13 @@ for example:
 
 ## Modification
 
-You can modify components which located in **resources/vendor/pagination**.
+For modification each component write ```vendor:publish``` with tag of **component name** and intended **theme name**.
+For example for **pagination** and theme of **tailwind-gray**:
+
+```bash
+php artisan vendor:publish --tag=pagination-tailwind-gray
+```
+
 
 ## License
 
