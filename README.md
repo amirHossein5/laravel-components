@@ -48,7 +48,7 @@ If you are using tailwindcss's purge, add path to your purge section:
      purge: [
         ...
         
-        './vendor/amir-hossein5/resources/**/*.blade.php'
+        "./vendor/amir-hossein5/laravel-components/resources/**/*.blade.php",
    ],
 ```
 
