@@ -1,9 +1,9 @@
 <?php
 
-namespace AmirHossein5\LaravelComponents\Components;
+namespace AmirHossein5\LaravelComponents\Components\Pagination;
 
-use AmirHossein5\LaravelComponents\Components\Traits\Pageable;
-use AmirHossein5\LaravelComponents\Components\Traits\Renderable;
+use AmirHossein5\LaravelComponents\Components\Pagination\Traits\Pageable;
+use AmirHossein5\LaravelComponents\Components\Pagination\Traits\Renderable;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Contracts\Pagination\Paginator;
 

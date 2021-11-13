@@ -1,6 +1,6 @@
 <?php
 
-namespace AmirHossein5\LaravelComponents\Components\Traits;
+namespace AmirHossein5\LaravelComponents\Components\Pagination\Traits;
 
 use Illuminate\Pagination\Paginator;
 

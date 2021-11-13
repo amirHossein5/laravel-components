@@ -1,6 +1,6 @@
 <?php
 
-namespace AmirHossein5\LaravelComponents\Components;
+namespace AmirHossein5\LaravelComponents\Components\Pagination;
 
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
@@ -25,7 +25,7 @@ class Paginate extends Component
 
         $themeName = str_replace(' ', '', ucwords(implode(' ', array_slice(explode('-', $theme), 1))));
 
-        $this->classNamespace = "AmirHossein5\\LaravelComponents\\Components\\{$technologyName}\\{$themeName}";
+        $this->classNamespace = "AmirHossein5\\LaravelComponents\\Components\\Pagination\\{$technologyName}\\{$themeName}";
     }
 
     /**
