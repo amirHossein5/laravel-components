@@ -1,21 +1,10 @@
 {
     "name": "amir-hossein5/laravel-components",
     "description": "laravel-components",
-    "require": {
-        "php": "^8.0",
-        "laravel/framework": "^8.0"
-    },
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "AmirHossein5\\LaravelComponents\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "AmirHossein5\\LaravelComponents\\ComponentServiceProvider"
-            ]
         }
     },
     "authors": [
@@ -24,5 +13,14 @@
             "email": "adada5116@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AmirHossein5\\LaravelComponents\\ComponentServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "orchestra/testbench": "^6.23"
+    }
 }
