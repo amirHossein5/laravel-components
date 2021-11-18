@@ -2,7 +2,6 @@
 
 namespace AmirHossein5\LaravelComponents;
 
-use AmirHossein5\LaravelComponents\Components\Pagination\Paginate;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
