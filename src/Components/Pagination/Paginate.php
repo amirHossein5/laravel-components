@@ -21,11 +21,9 @@ class Paginate extends Component
         private $showPaginatorDetails = null,
         private string $theme = 'tailwind-light',
     ) {
-        $technologyName = ucwords(explode('-', $theme)[0]);
-
         $themeName = str_replace(' ', '', ucwords(implode(' ', array_slice(explode('-', $theme), 1))));
 
-        $this->classNamespace = "AmirHossein5\\LaravelComponents\\Components\\Pagination\\{$technologyName}\\{$themeName}";
+        $this->classNamespace = "AmirHossein5\\LaravelComponents\\Components\\Pagination\\Components\\{$themeName}";
     }
 
     /**

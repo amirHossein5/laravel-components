@@ -1,6 +1,6 @@
 <?php
 
-namespace AmirHossein5\LaravelComponents\Components\Pagination\Tailwind;
+namespace AmirHossein5\LaravelComponents\Components\Pagination\Components;
 
 use AmirHossein5\LaravelComponents\Components\Pagination\Pagination;
 
@@ -11,8 +11,8 @@ class LightCircled extends Pagination
     public function render()
     {
         return $this->view(
-            'pagination.tailwind.light-circled.tailwind',
-            'pagination.tailwind.light-circled.simple-tailwind'
+            'pagination.light-circled.tailwind',
+            'pagination.light-circled.simple-tailwind'
         );
     }
 }

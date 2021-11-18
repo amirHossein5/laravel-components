@@ -1,6 +1,6 @@
 <?php
 
-namespace AmirHossein5\LaravelComponents\Components\Pagination\Tailwind;
+namespace AmirHossein5\LaravelComponents\Components\Pagination\Components;
 
 use AmirHossein5\LaravelComponents\Components\Pagination\Pagination;
 
@@ -11,8 +11,8 @@ class RedPill extends Pagination
     public function render()
     {
         return $this->view(
-            'pagination.tailwind.red-pill.tailwind',
-            'pagination.tailwind.red-pill.simple-tailwind'
+            'pagination.red-pill.tailwind',
+            'pagination.red-pill.simple-tailwind'
         );
     }
 }

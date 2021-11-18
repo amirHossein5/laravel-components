@@ -37,9 +37,9 @@ class ComponentServiceProvider extends ServiceProvider
 
         foreach ($allComponents as $component) {
             $this->publishes([
-                __DIR__ . "/../resources/views/{$component['component']}/{$component['technology']}/{$component['theme']}" =>
-                resource_path("views/vendor/laravel-components/{$component['component']}/{$component['technology']}/{$component['theme']}")
-            ], "{$component['component']}-{$component['technology']}-{$component['theme']}");
+                __DIR__ . "/../resources/views/{$component['component']}/{$component['theme']}" =>
+                resource_path("views/vendor/laravel-components/{$component['component']}/{$component['theme']}")
+            ], "{$component['component']}-{$component['theme']}");
         }
     }
 
@@ -49,14 +49,10 @@ class ComponentServiceProvider extends ServiceProvider
         $components = array_keys(config('components'));  // like pagination,...
 
         foreach ($components as $component) {
-            $technologies = array_keys(config("components.{$component}")); // like tailwind,...
+            $themes =  config("components.{$component}"); // theme names.
 
-            foreach ($technologies as $technology) {
-                $themes =  config("components.{$component}.{$technology}"); // theme names related to a technology.
-
-                foreach ($themes as $theme) {
-                    $allComponents[] = ['component' => $component, 'technology' => $technology, 'theme' => $theme];
-                }
+            foreach ($themes as $theme) {
+                $allComponents[] = ['component' => $component, 'theme' => $theme];
             }
         }
 

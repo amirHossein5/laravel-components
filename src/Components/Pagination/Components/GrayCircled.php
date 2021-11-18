@@ -1,6 +1,6 @@
 <?php
 
-namespace AmirHossein5\LaravelComponents\Components\Pagination\Tailwind;
+namespace AmirHossein5\LaravelComponents\Components\Pagination\Components;
 
 use AmirHossein5\LaravelComponents\Components\Pagination\Pagination;
 
@@ -11,8 +11,8 @@ class GrayCircled extends Pagination
     public function render()
     {
         return $this->view(
-            'pagination.tailwind.gray-circled.tailwind',
-            'pagination.tailwind.gray-circled.simple-tailwind'
+            'pagination.gray-circled.tailwind',
+            'pagination.gray-circled.simple-tailwind'
         );
     }
 }
