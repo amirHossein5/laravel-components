@@ -1,5 +1,5 @@
 
-This package provides ready to use pagination components using tailwindcss, with multiple theme according to your taste. 
+This package provides ready to use pagination components using tailwindcss inside (you don't need to have it). 
 
 
 For example ***instead of*** :
@@ -12,12 +12,12 @@ For example ***instead of*** :
 
 You may use in blade:
 ```html
-<x-paginate :elems="$users" />
+<x-pagination::gray-circled :elems="$users" />
 ```
 
-And it previews with ***default*** theme :
+And it previews with [gray-circled](#gray-circled) theme :
 
-<img src="/screens/light.png" alt="light theme" width="" />
+<img src="/screens/gray-circled.png" alt="gray-circled theme" width="" />
 
 But you can **change** **themes** and more **settings** read **[Usage](#usage)**.
 
@@ -25,13 +25,14 @@ But you can **change** **themes** and more **settings** read **[Usage](#usage)**
 
 
 - **[Installation](#installation)**
-- **[Usage](#usage)**
+- **[Components](#Components)**
 - **[Themes](#themes)**
 
 
 ## Prerequisites
 
-**Tailwindcss**, **Laravel 8**, **PHP 8** 
+- Laravel 8
+- PHP 8 
 
 
 ## Installation
@@ -40,25 +41,19 @@ But you can **change** **themes** and more **settings** read **[Usage](#usage)**
 composer require amir-hossein5/laravel-components
 ```
 
-If you are using tailwindcss's purge, add path to your purge section: 
-
-```js
-  // tailwind.config.js
-  
-     purge: [
-        ...
-        
-        "./vendor/amir-hossein5/laravel-components/resources/**/*.blade.php",
-   ],
-```
-
-And you may run ```npm run watch``` or, ```npm run dev``` or, ```npm run prod```
-
-## Usage
+## Components
 
 - ### Pagination
 
-For pagination use ```<x-paginate />``` tag with ```:elems=""``` to pass pagination items.
+For pagination use ```<x-pagination::gray-circled``` tag with its theme name ```:elems="" />``` to pass pagination items.
+and for styles:
+```html
+...
+
+    @lComponentStyles('pagination')
+
+</head>
+```
 
 All parameters for paginate tag that you may use :
 
@@ -66,7 +61,6 @@ All parameters for paginate tag that you may use :
 | parameter                             | description                                                         | default                          |
 |-------------------------------------- |-------------------------------------------------------------------- | ---------------------------------|
 | :elems=""                             |  pagination items                                                   |                                  |
-| theme="string"                        |  name of theme. find themes [here](#themes)                         | [tailwind-light](#tailwind-light)| 
 | prev="string"                         |  previous button's html                                             | laravel's default                |
 | next="string"                         |  next button's html                                                 | laravel's default                |
 | prevInResponsive="string"             |  previous button's html in responsive pagination                    | laravel's default                |
@@ -79,9 +73,8 @@ All parameters for paginate tag that you may use :
 for example:
 
 ```html
-<x-paginate
+<x-pagination::light-underlined
   :elems="$users"
-  theme="tailwind-gray-circled"
   :showPaginatorDetails="false"
   :showDisabledButtons="true" 
 />
@@ -92,36 +85,36 @@ for example:
 
 - ### pagination
 
-  - ### tailwind-light
+  - ### light
 
     <img src="/screens/light.png" alt="light theme" />
 
 
-  - ### tailwind-gray
+  - ### gray
 
     ![gray-theme](screens/gray.png) 
     ![gray-theme](/screens/gray1.png)
 
 
-  - ### tailwind-light-circled
+  - ### light-circled
 
 
     <img src="/screens/light-circled.png" alt="light-circled theme" />
 
 
-  - ### tailwind-gray-circled
+  - ### gray-circled
 
     
     <img src="/screens/gray-circled.png" alt="gray-circled theme" />
   
 
-  - ### tailwind-light-underlined
+  - ### light-underlined
 
 
     <img src="/screens/light-underlined.png" alt="light-underlined theme" />
 
 
-  - ### tailwind-red-pill
+  - ### red-pill
 
 
     <img src="/screens/red-pill.png" alt="red-pill theme" />
@@ -132,10 +125,10 @@ for example:
 ## Modification
 
 For modification each component write ```vendor:publish``` with tag of **component name** and intended **theme name**.
-For example for **pagination** and theme of **tailwind-gray**:
+For example for **pagination** and theme of **gray**:
 
 ```bash
-php artisan vendor:publish --tag=pagination-tailwind-gray
+php artisan vendor:publish --tag=pagination-gray
 ```
 
 
