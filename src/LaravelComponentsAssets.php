@@ -15,7 +15,7 @@ class LaravelComponentsAssets
             $class = $this->getComponentAssetsClass($componentName);
             $file = $class->css();
         } catch (\Error $e) {
-            throw new MethodNotFoundException(ucwords($componentName) . " component doest have any script", $class, 'js');
+            abort('404', "{$componentName} doesn't have any stylesheet");
         }
 
         return $this->pretendsResponseIsFile($file, 'text/css');
@@ -27,7 +27,7 @@ class LaravelComponentsAssets
             $class = $this->getComponentAssetsClass($componentName);
             $file = $class->js();
         } catch (\Error $e) {
-            throw new MethodNotFoundException(ucwords($componentName) . " component doest have any script", $class, 'js');
+            abort('404', "{$componentName} doesn't have any script");
         }
 
         return $this->pretendsResponseIsFile($file, 'application/javascript');
