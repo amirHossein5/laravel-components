@@ -41,7 +41,7 @@ class LaravelComponentsAssets
         try {
             $class = (new $class);
         } catch (\Error $e) {
-            throw new ClassNotFoundException("Component \"$componentName\" not found ", $class);
+            abort('404', "Component \"$componentName\" not found ");
         }
 
         return new $class;
