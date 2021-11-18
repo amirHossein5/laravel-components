@@ -1,18 +1,17 @@
 <?php
 
-namespace AmirHossein5\LaravelComponents\Components\Pagination\Traits;
+namespace AmirHossein5\LaravelComponents\Components\Pagination;
 
 use Illuminate\Pagination\Paginator;
 
 trait Pageable
 {
-    protected array $elements = [];  //numbers in pagination
+    public array $elements = [];  //numbers in pagination
 
-    protected function setNumberOfPages(): void
+    protected function setPageNumbers(): void
     {
-        $numberOfPages = ceil($this->paginator->total() / $this->paginator->perPage());
-
         $elements = [];
+        $numberOfPages = ceil($this->paginator->total() / $this->paginator->perPage());
 
         for ($i = 1; $i <= $numberOfPages; $i++) {
             $elements[$i] = $this->paginator->url($i);

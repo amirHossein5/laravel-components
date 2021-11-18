@@ -6,11 +6,11 @@ use AmirHossein5\LaravelComponents\Components\Pagination\Pagination;
 
 class RedPill extends Pagination
 {
-    protected bool $showDisabledButtons = true;
-
     public function render()
     {
-        return $this->view(
+        $this->showDisabledButtons = true;
+
+        return $this->paginateView(
             'pagination.red-pill.tailwind',
             'pagination.red-pill.simple-tailwind'
         );

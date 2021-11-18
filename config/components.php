@@ -1,13 +1,11 @@
 <?php
 
+/**
+ * Array of all components.
+ *
+ */
 
 return [
-
-    /**
-     * Array of all components.
-     *
-     */
-
     "pagination" => [
         "light",
         "light-circled",

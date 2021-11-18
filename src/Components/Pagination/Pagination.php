@@ -2,69 +2,38 @@
 
 namespace AmirHossein5\LaravelComponents\Components\Pagination;
 
-use AmirHossein5\LaravelComponents\Components\Pagination\Traits\Pageable;
-use AmirHossein5\LaravelComponents\Components\Pagination\Traits\Renderable;
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
-use Illuminate\Contracts\Pagination\Paginator;
+use AmirHossein5\LaravelComponents\Components\Renderable;
+use Illuminate\View\Component;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
+use Illuminate\View\View;
 
-class Pagination
+abstract class Pagination extends Component
 {
     use Pageable, Renderable;
 
-    protected string $prev = '';
-    protected string $next = '';
-    protected string $prevInResponsive = '';
-    protected string $nextInResponsive = '';
-    protected string $class = '';
-    protected bool $showDisabledButtons = false;
-    protected bool $showPaginatorDetails = true;
+    public LengthAwarePaginator|Paginator $paginator;
 
     public function __construct(
-        protected LengthAwarePaginator|Paginator $paginator,
-        $prev = null,
-        $next = null,
-        $prevInResponsive = null,
-        $nextInResponsive = null,
-        $class = null,
-        $showDisabledButtons = null,
-        $showPaginatorDetails = null,
+        LengthAwarePaginator|Paginator $elems,
+        public string $prev = '',
+        public string $next = '',
+        public string $prevInResponsive = '',
+        public string $nextInResponsive = '',
+        public string $class = '',
+        public bool $showDisabledButtons = false,
+        public bool $showPaginatorDetails = true,
     ) {
-        // check if user passed variable or not
-        if ($prev) {
-            $this->prev = $prev;
-        }
-        if ($next) {
-            $this->next = $next;
-        }
-        if ($prevInResponsive) {
-            $this->prevInResponsive = $prevInResponsive;
-        }
-        if ($nextInResponsive) {
-            $this->nextInResponsive = $nextInResponsive;
-        }
-        if ($class) {
-            $this->class = $class;
-        }
-        if ($showDisabledButtons !== null) {
-            $this->showDisabledButtons = $showDisabledButtons;
-        }
-        if ($showPaginatorDetails !== null) {
-            $this->showPaginatorDetails = $showPaginatorDetails;
-        }
+        $this->paginator = $elems;
+        $this->isSimplePaginate() ?: $this->setPageNumbers();
     }
 
-    protected function getVariables(): array
+    abstract public function render();
+
+    protected function paginateView(string $defaultView, string $simpleView): View
     {
-        return [
-            'paginator'             => $this->paginator,
-            'prev'                  => $this->prev,
-            'next'                  => $this->next,
-            'prevInResponsive'      => $this->prevInResponsive,
-            'nextInResponsive'      => $this->nextInResponsive,
-            'class'                 => $this->class,
-            'showDisabledButtons'   => $this->showDisabledButtons,
-            'showPaginatorDetails'  => $this->showPaginatorDetails,
-            'elements'              => $this->elements
-        ];
+        return $this->isSimplePaginate()
+            ? $this->view($simpleView)
+            : $this->view($defaultView);
     }
 }

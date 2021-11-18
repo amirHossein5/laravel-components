@@ -8,7 +8,7 @@ class Gray extends Pagination
 {
     public function render()
     {
-        return $this->view(
+        return $this->paginateView(
             'pagination.gray.tailwind',
             'pagination.gray.simple-tailwind'
         );

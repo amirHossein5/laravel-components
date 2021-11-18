@@ -8,7 +8,7 @@ class Light extends Pagination
 {
     public function render()
     {
-        return $this->view(
+        return $this->paginateView(
             'pagination.light.tailwind',
             'pagination.light.simple-tailwind'
         );
