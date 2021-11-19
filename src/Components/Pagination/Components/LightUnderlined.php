@@ -6,10 +6,10 @@ use AmirHossein5\LaravelComponents\Components\Pagination\Pagination;
 
 class LightUnderlined extends Pagination
 {
+    public bool $showDisabledButtons = true;
+    
     public function render()
     {
-        $this->showDisabledButtons = true;
-
         return $this->paginateView(
             'pagination.light-underlined.tailwind',
             'pagination.light-underlined.simple-tailwind'
