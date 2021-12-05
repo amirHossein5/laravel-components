@@ -2,9 +2,6 @@
 
 namespace AmirHossein5\LaravelComponents;
 
-use Prophecy\Exception\Doubler\ClassNotFoundException;
-use Prophecy\Exception\Doubler\MethodNotFoundException;
-
 class LaravelComponentsAssets
 {
     use PretendsToBeAFile;
@@ -17,7 +14,7 @@ class LaravelComponentsAssets
         } catch (\Error $e) {
             abort('404', "{$componentName} doesn't have any stylesheet");
         }
-
+        
         return $this->pretendsResponseIsFile($file, 'text/css');
     }
 

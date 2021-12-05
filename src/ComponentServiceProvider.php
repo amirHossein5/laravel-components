@@ -33,12 +33,12 @@ class ComponentServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(
             __DIR__ . '/../config/components.php',
-            'lComponents-components'
+            'components-components'
         );
 
         $this->mergeConfigFrom(
             __DIR__ . '/../config/app.php',
-            'lComponents-app'
+            'components-app'
         );
     }
 
@@ -71,7 +71,7 @@ class ComponentServiceProvider extends ServiceProvider
     private function publishesViews(): void
     {
         $allComponents = $this->getAllComponents();
-        $publish_vendor_folder = config('lComponents-app.publish_vendor_folder');
+        $publish_vendor_folder = config('components-app.publish_vendor_folder');
 
         foreach ($allComponents as $component) {
             $this->publishes([
@@ -84,10 +84,10 @@ class ComponentServiceProvider extends ServiceProvider
     private function getAllComponents(): array
     {
         $allComponents = [];
-        $components = array_keys(config('lComponents-components'));  // like pagination,...
+        $components = array_keys(config('components-components'));  // like pagination,...
 
         foreach ($components as $component) {
-            $themes = config("lComponents-components.{$component}"); // theme names.
+            $themes = config("components-components.{$component}"); // theme names.
             foreach ($themes as $theme) {
                 $allComponents[] = ['component' => $component, 'theme' => $theme];
             }

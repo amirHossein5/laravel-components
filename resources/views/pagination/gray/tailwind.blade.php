@@ -43,7 +43,7 @@
                     @if ($paginator->onFirstPage())
                         @if ($showDisabledButtons)
                             <span aria-disabled="true" aria-label="{{ __('pagination.previous') }}">
-                                <span class="relative inline-flex items-center px-2 py-2 text-sm font-medium leading-5 text-gray-500 bg-white border border-gray-300 cursor-default rounded-l-md" aria-hidden="true">
+                                <span class="relative inline-flex items-center px-2 py-2 text-sm font-medium leading-5 text-gray-500 bg-white border border-gray-300 cursor-default rounded-l-md first-button" aria-hidden="true">
                                     @if($prev)
                                         {!! $prev !!}
                                     @else
@@ -113,7 +113,7 @@
                     @else
                         @if ($showDisabledButtons)
                             <span aria-disabled="true" aria-label="{{ __('pagination.next') }}">
-                                <span class="relative inline-flex items-center px-2 py-2 -ml-px text-sm font-medium leading-5 text-gray-500 bg-white border border-gray-300 cursor-default rounded-r-md" aria-hidden="true">
+                                <span class="relative inline-flex items-center px-2 py-2 -ml-px text-sm font-medium leading-5 text-gray-500 bg-white border border-gray-300 cursor-default last-button rounded-r-md" aria-hidden="true">
                                     @if($next)
                                         {!! $next !!}
                                     @else

@@ -4,7 +4,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "AmirHossein5\\LaravelComponents\\": "src/"
+            "AmirHossein5\\LaravelComponents\\": "src/",
+            "AmirHossein5\\LaravelComponents\\Tests\\": "tests/"
         }
     },
     "authors": [
