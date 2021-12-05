@@ -85,21 +85,34 @@ for example:
 
 - ### pagination
 
-  - ### light
+  | <a href="#light">light</a>          | <a href="#gray">gray</a>                                         |
+  |------------------------------------|-------------------------------------------------------------------|
+  | ![light-theme](/screens/light.png) | ![gray-theme](screens/gray.png) ![gray-theme](/screens/gray1.png) |
+  
+  
+  | <a href="#light-circled">light-circled</a>         | <a href="#gray-circled">gray-circled</a>         |
+  |----------------------------------------------------|--------------------------------------------------|
+  | ![light-circled-theme](/screens/light-circled.png) | ![gray-circled-theme](/screens/gray-circled.png) |
+  
+  | <a href="#light-underlined">light-underlined</a>         | <a href="#red-pill">red-pill</a>         |
+  |----------------------------------------------------|--------------------------------------------------|
+  | ![light-underlined-theme](/screens/light-underlined.png) | ![red-pill-theme](/screens/red-pill.png) |
+  
+<!--   - ### light
 
-    <img src="/screens/light.png" alt="light theme" />
+    ![light-theme](/screens/light.png)
 
 
   - ### gray
 
     ![gray-theme](screens/gray.png) 
-    ![gray-theme](/screens/gray1.png)
+    ![gray-theme](/screens/gray1.png) -->
 
-
+<!-- 
   - ### light-circled
 
 
-    <img src="/screens/light-circled.png" alt="light-circled theme" />
+    ![light-circled-theme](/screens/light-circled.png)
 
 
   - ### gray-circled
@@ -107,8 +120,8 @@ for example:
     
     <img src="/screens/gray-circled.png" alt="gray-circled theme" />
   
-
-  - ### light-underlined
+ -->
+<!--   - ### light-underlined
 
 
     <img src="/screens/light-underlined.png" alt="light-underlined theme" />
@@ -118,7 +131,7 @@ for example:
 
 
     <img src="/screens/red-pill.png" alt="red-pill theme" />
-
+ -->
 
 <br/>
 
