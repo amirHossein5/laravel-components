@@ -17,7 +17,7 @@ You may use in blade:
 
 And it previews with [gray-circled](#gray-circled) theme :
 
-<img src="/screens/gray-circled.png" alt="gray-circled theme" width="" />
+<img src="/screens/gray-circled.png" alt="gray-circled-theme" width="60%" />
 
 But you can **change** **themes** and more **settings** read **[Usage](#usage)**.
 
@@ -84,54 +84,39 @@ for example:
 ## Themes
 
 - ### pagination
+  
+  - ### light
 
-  | <a href="#light">light</a>          | <a href="#gray">gray</a>                                         |
-  |------------------------------------|-------------------------------------------------------------------|
-  | ![light-theme](/screens/light.png) | ![gray-theme](screens/gray.png) ![gray-theme](/screens/gray1.png) |
-  
-  
-  | <a href="#light-circled">light-circled</a>         | <a href="#gray-circled">gray-circled</a>         |
-  |----------------------------------------------------|--------------------------------------------------|
-  | ![light-circled-theme](/screens/light-circled.png) | ![gray-circled-theme](/screens/gray-circled.png) |
-  
-  | <a href="#light-underlined">light-underlined</a>         | <a href="#red-pill">red-pill</a>         |
-  |----------------------------------------------------|--------------------------------------------------|
-  | ![light-underlined-theme](/screens/light-underlined.png) | ![red-pill-theme](/screens/red-pill.png) |
-  
-<!--   - ### light
-
-    ![light-theme](/screens/light.png)
+    <img src="/screens/light.png" alt="light-theme" width="60%" />
 
 
   - ### gray
 
-    ![gray-theme](screens/gray.png) 
-    ![gray-theme](/screens/gray1.png) -->
+    <img src="screens/gray.png" alt="gray-theme" width="60%" />
+    <img src="screens/gray1.png" alt="gray-theme" width="60%" />
 
-<!-- 
+
   - ### light-circled
 
-
-    ![light-circled-theme](/screens/light-circled.png)
+    <img src="/screens/light-circled.png" alt="light-circled-theme" width="60%" />
 
 
   - ### gray-circled
 
-    
-    <img src="/screens/gray-circled.png" alt="gray-circled theme" />
+    <img src="/screens/gray-circled.png" alt="gray-circled-theme" width="60%" />
   
- -->
-<!--   - ### light-underlined
+
+  - ### light-underlined
 
 
-    <img src="/screens/light-underlined.png" alt="light-underlined theme" />
+    <img src="/screens/light-underlined.png" alt="light-underlined-theme" width="60%" />
 
 
   - ### red-pill
 
 
-    <img src="/screens/red-pill.png" alt="red-pill theme" />
- -->
+    <img src="/screens/red-pill.png" alt="red-pill-theme" width="60%" />
+
 
 <br/>
 
