@@ -17,7 +17,7 @@ You may use in blade:
 
 And it previews with [gray-circled](#gray-circled) theme :
 
-<img src="/screens/gray-circled.png" alt="gray-circled theme" width="" />
+<img src="/screens/gray-circled.png" alt="gray-circled-theme" width="60%" />
 
 But you can **change** **themes** and more **settings** read **[Usage](#usage)**.
 
@@ -84,40 +84,38 @@ for example:
 ## Themes
 
 - ### pagination
-
+  
   - ### light
 
-    <img src="/screens/light.png" alt="light theme" />
+    <img src="/screens/light.png" alt="light-theme" width="60%" />
 
 
   - ### gray
 
-    ![gray-theme](screens/gray.png) 
-    ![gray-theme](/screens/gray1.png)
+    <img src="screens/gray.png" alt="gray-theme" width="60%" />
+    <img src="screens/gray1.png" alt="gray-theme" width="60%" />
 
 
   - ### light-circled
 
-
-    <img src="/screens/light-circled.png" alt="light-circled theme" />
+    <img src="/screens/light-circled.png" alt="light-circled-theme" width="60%" />
 
 
   - ### gray-circled
 
-    
-    <img src="/screens/gray-circled.png" alt="gray-circled theme" />
+    <img src="/screens/gray-circled.png" alt="gray-circled-theme" width="60%" />
   
 
   - ### light-underlined
 
 
-    <img src="/screens/light-underlined.png" alt="light-underlined theme" />
+    <img src="/screens/light-underlined.png" alt="light-underlined-theme" width="60%" />
 
 
   - ### red-pill
 
 
-    <img src="/screens/red-pill.png" alt="red-pill theme" />
+    <img src="/screens/red-pill.png" alt="red-pill-theme" width="60%" />
 
 
 <br/>
