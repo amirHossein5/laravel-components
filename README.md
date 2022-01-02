@@ -43,19 +43,20 @@ composer require amir-hossein5/laravel-components
 
 ## Components
 
-- ### Pagination
+### Pagination
 
-For pagination use ```<x-pagination::gray-circled``` tag with its theme name ```:elems="" />``` to pass pagination items.
-and for styles:
+#### Directive:
+
+``` <x-pagination::theme-name :elems="$users" ```
+
+#### Styles:
 ```html
 ...
-
     @lComponentStyles('pagination')
-
 </head>
 ```
 
-All parameters for paginate tag that you may use :
+All parameters of paginate tag :
 
 
 | parameter                             | description                                                         | default                          |
@@ -83,7 +84,7 @@ for example:
 
 ## Themes
 
-- ### pagination
+### Pagination
   
   - ### light
 
@@ -122,7 +123,7 @@ for example:
 
 ## Modification
 
-For modification each component write ```vendor:publish``` with tag of **component name** and intended **theme name**.
+To modify any component use ```vendor:publish --tag=componentName-themeName```. </br>
 For example for **pagination** and theme of **gray**:
 
 ```bash
