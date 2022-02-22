@@ -14,7 +14,7 @@ class LaravelComponentsAssets
         } catch (\Error $e) {
             abort('404', "{$componentName} doesn't have any stylesheet");
         }
-        
+
         return $this->pretendsResponseIsFile($file, 'text/css');
     }
 
@@ -36,11 +36,11 @@ class LaravelComponentsAssets
         $class = "AmirHossein5\\LaravelComponents\\Components\\{$componentName}\\{$componentName}Assets";
 
         try {
-            $class = (new $class);
+            $class = (new $class());
         } catch (\Error $e) {
             abort('404', "Component \"$componentName\" not found ");
         }
 
-        return new $class;
+        return new $class();
     }
 }

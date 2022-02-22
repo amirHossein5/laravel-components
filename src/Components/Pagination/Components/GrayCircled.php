@@ -7,7 +7,7 @@ use AmirHossein5\LaravelComponents\Components\Pagination\Pagination;
 class GrayCircled extends Pagination
 {
     public bool $showDisabledButtons = true;
-    
+
     public function render()
     {
         return $this->paginateView(

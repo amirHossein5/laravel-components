@@ -7,7 +7,7 @@ use AmirHossein5\LaravelComponents\Components\Pagination\Pagination;
 class LightUnderlined extends Pagination
 {
     public bool $showDisabledButtons = true;
-    
+
     public function render()
     {
         return $this->paginateView(

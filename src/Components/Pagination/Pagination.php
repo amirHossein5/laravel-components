@@ -4,14 +4,16 @@ namespace AmirHossein5\LaravelComponents\Components\Pagination;
 
 use AmirHossein5\LaravelComponents\Components\HasSended;
 use AmirHossein5\LaravelComponents\Components\Renderable;
-use Illuminate\View\Component;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
+use Illuminate\View\Component;
 use Illuminate\View\View;
 
 abstract class Pagination extends Component
 {
-    use Pageable, Renderable, HasSended;
+    use Pageable;
+    use Renderable;
+    use HasSended;
 
     public LengthAwarePaginator|Paginator $paginator;
     public string $prev = '';

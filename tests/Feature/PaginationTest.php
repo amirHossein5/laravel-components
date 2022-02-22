@@ -128,19 +128,19 @@ class PaginationTest extends TestCase
     {
         foreach (config('components-components.pagination') as $theme) {
             $blade = $this->blade(
-                '<x-pagination::' . $theme . ' :elems="$users"/>',
+                '<x-pagination::'.$theme.' :elems="$users"/>',
                 ['users' => $this->makePagination(true)]
             );
 
             $blade->assertDontSee('hidden sm:flex-1 sm:flex sm:items-center sm:justify-between');
-        };
+        }
     }
 
     public function test_themes_load_correctly()
     {
         foreach ($this->uniqueContent['pagination'] as $theme => $contents) {
             $blade = $this->blade(
-                '<x-pagination::' . $theme . ' :elems="$users"/>',
+                '<x-pagination::'.$theme.' :elems="$users"/>',
                 ['users' => $this->makePagination()]
             );
             foreach ($contents as $content) {
