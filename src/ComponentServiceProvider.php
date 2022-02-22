@@ -25,19 +25,19 @@ class ComponentServiceProvider extends ServiceProvider
         }
 
         $this->loadViewsFrom([
-            __DIR__ . "/../resources/views/"
+            __DIR__.'/../resources/views/',
         ], 'Components');
     }
 
     private function mergesConfig()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/components.php',
+            __DIR__.'/../config/components.php',
             'components-components'
         );
 
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/app.php',
+            __DIR__.'/../config/app.php',
             'components-app'
         );
     }
@@ -46,7 +46,7 @@ class ComponentServiceProvider extends ServiceProvider
     {
         foreach ($this->getAllComponents() as $component) {
             Blade::componentNamespace(
-                'AmirHossein5\\LaravelComponents\\Components\\' . ucwords($component['component']) . '\\Components',
+                'AmirHossein5\\LaravelComponents\\Components\\'.ucwords($component['component']).'\\Components',
                 $component['component']
             );
         }
@@ -75,8 +75,7 @@ class ComponentServiceProvider extends ServiceProvider
 
         foreach ($allComponents as $component) {
             $this->publishes([
-                __DIR__ . "/../resources/views/{$component['component']}/{$component['theme']}" =>
-                resource_path("views/vendor/{$publish_vendor_folder}/{$component['component']}/{$component['theme']}")
+                __DIR__."/../resources/views/{$component['component']}/{$component['theme']}" => resource_path("views/vendor/{$publish_vendor_folder}/{$component['component']}/{$component['theme']}"),
             ], "{$component['component']}-{$component['theme']}");
         }
     }

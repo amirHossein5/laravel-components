@@ -26,6 +26,7 @@ trait Renderable
     private function isViewPublished($path): bool
     {
         $publish_vendor_folder = config('components-app.publish_vendor_folder');
+
         return file_exists(resource_path("views/vendor/{$publish_vendor_folder}/{$path}.blade.php"));
     }
 }

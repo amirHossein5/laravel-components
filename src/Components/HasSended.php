@@ -9,9 +9,7 @@ trait HasSended
 {
     /**
      * Pass all received parameters.
-     *
      */
-
     protected function setParametersToPropertiesIfPassed(array|string $except, ...$params): void
     {
         $class = $this->getParentClass();

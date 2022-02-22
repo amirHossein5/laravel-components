@@ -12,14 +12,14 @@ trait PretendsToBeAFile
 
         if ($this->matchesCache($lastModified)) {
             return response()->make('', 304, [
-                'Expires' => $this->httpDate($expires),
+                'Expires'       => $this->httpDate($expires),
                 'Cache-Control' => $cacheControl,
             ]);
         }
 
         return response()->file($file, [
-            'Content-Type' => "$mimeType; charset=utf-8",
-            'Expires' => $this->httpDate($expires),
+            'Content-Type'  => "$mimeType; charset=utf-8",
+            'Expires'       => $this->httpDate($expires),
             'Cache-Control' => $cacheControl,
             'Last-Modified' => $this->httpDate($lastModified),
         ]);
