@@ -47,7 +47,9 @@ composer require amir-hossein5/laravel-components
 
 #### Directive:
 
-``` <x-pagination::theme-name :elems="$users" ```
+```php
+<x-pagination::theme-name :elems="$users" 
+```
 
 #### Styles:
 ```html
